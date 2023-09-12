@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { LoginButton, LogoutButton } from './components/buttons'
 
 export default function Home() {
