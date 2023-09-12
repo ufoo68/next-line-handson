@@ -1,15 +1,17 @@
-import NextAuth from "next-auth";
+import NextAuth, { NextAuthOptions } from "next-auth";
 import LineProvider from "next-auth/providers/line";
 
-const handler = NextAuth({
+export const authOptions: NextAuthOptions = {
     debug: true,
     session: { strategy: "jwt" },
     providers: [
         LineProvider({
-          clientId: process.env.LINE_CLIENT_ID!,
-          clientSecret: process.env.LINE_CLIENT_SECRET!
+            clientId: process.env.LINE_CLIENT_ID!,
+            clientSecret: process.env.LINE_CLIENT_SECRET!
         })
-      ]
-});
+    ]
+}
+
+const handler = NextAuth(authOptions);
 
 export { handler as GET,handler as POST }
