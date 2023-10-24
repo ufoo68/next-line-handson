@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# About this repository
+
+Sample code for handson using LINE login.
+
+https://zenn.dev/ufoo68/books/aa31a0a6fe0b53
 
 ## Getting Started
 
