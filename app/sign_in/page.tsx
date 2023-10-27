@@ -1,4 +1,4 @@
-import { LoginButton, LogoutButton } from '../components/buttons'
+import { LoginButton } from '../components/buttons'
 
 export default async function Home() {
   return (
